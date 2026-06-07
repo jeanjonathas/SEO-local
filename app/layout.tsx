@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Local SEO",
-  description: "A clean, modern starting point for local SEO experiments.",
+  description: "Um ponto de partida limpo e moderno para experimentos de SEO local.",
 };
 
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en-CA">
+    <html lang="pt-BR">
       <head>
         {/* Preconnect to image CDN so the LCP image starts loading faster */}
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="" />

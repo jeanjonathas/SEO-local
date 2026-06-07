@@ -9,27 +9,27 @@ export default function HomePage() {
       <main className="flex-1">
         <section className="mx-auto max-w-6xl px-6 pt-24 pb-28">
           <p className="text-xs font-medium uppercase tracking-[0.18em] text-ink-400">
-            Local SEO &nbsp;/&nbsp; Tutorial series
+            SEO Local &nbsp;/&nbsp; Série de tutoriais
           </p>
           <h1 className="mt-6 max-w-3xl text-5xl font-semibold leading-[1.05] tracking-tightish text-ink-900 md:text-6xl">
-            Win your neighbourhood on search.
+            Domine seu bairro nos resultados de busca.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-600">
-            A clean, lightweight starting point for everything we build in the
-            local SEO series — designed to grow one feature at a time.
+            Um ponto de partida leve e organizado para tudo que construímos na
+            série de SEO local — projetado para crescer um recurso por vez.
           </p>
           <div className="mt-10 flex items-center gap-3">
             <a
               href="#features"
               className="rounded-full bg-ink-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-ink-800"
             >
-              See what's inside
+              Ver o que tem aqui
             </a>
             <a
               href="#approach"
               className="rounded-full border border-ink-200 px-5 py-2.5 text-sm font-medium text-ink-800 transition hover:border-ink-400"
             >
-              Read the approach
+              Ver a abordagem
             </a>
           </div>
         </section>
@@ -59,12 +59,12 @@ export default function HomePage() {
           <div className="grid gap-12 md:grid-cols-2">
             <div>
               <h2 className="text-3xl font-semibold tracking-tightish text-ink-900 md:text-4xl">
-                Built one block at a time.
+                Construído um bloco por vez.
               </h2>
               <p className="mt-4 text-ink-600 leading-relaxed">
-                Every page, route, and integration we add will be small, readable,
-                and easy to follow. No clever abstractions — just the simplest
-                version of each idea.
+                Cada página, rota e integração que adicionarmos será pequena, legível
+                e fácil de acompanhar. Sem abstrações complicadas — apenas a versão
+                mais simples de cada ideia.
               </p>
             </div>
             <ol className="space-y-5 text-sm text-ink-600">
@@ -84,11 +84,11 @@ export default function HomePage() {
           <div className="mx-auto max-w-6xl px-6 py-20">
             <div className="rounded-2xl border border-ink-100 bg-white p-10 md:p-14">
               <h2 className="text-2xl font-semibold tracking-tightish text-ink-900 md:text-3xl">
-                More coming soon.
+                Muito mais em breve.
               </h2>
               <p className="mt-3 max-w-xl text-ink-600">
-                This is the foundation. As the tutorial series grows, this page
-                grows with it — auth, dashboards, data, the lot.
+                Esta é a base. Conforme a série de tutoriais cresce, esta página
+                cresce junto — autenticação, dashboards, dados e muito mais.
               </p>
             </div>
           </div>
