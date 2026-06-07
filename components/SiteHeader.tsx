@@ -9,15 +9,15 @@ export function SiteHeader() {
           </span>
         </div>
         <nav className="hidden items-center gap-8 text-sm text-ink-600 md:flex">
-          <a className="transition hover:text-ink-900" href="#features">Features</a>
-          <a className="transition hover:text-ink-900" href="#approach">Approach</a>
+          <a className="transition hover:text-ink-900" href="#features">Recursos</a>
+          <a className="transition hover:text-ink-900" href="#approach">Abordagem</a>
           <a className="transition hover:text-ink-900" href="/feedback">Feedback</a>
         </nav>
         <a
           href="#contact"
           className="rounded-full bg-ink-900 px-4 py-2 text-xs font-medium text-white transition hover:bg-ink-800"
         >
-          Get started
+          Começar
         </a>
       </div>
     </header>

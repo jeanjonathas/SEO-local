@@ -102,25 +102,25 @@ export default function HomePage() {
 
 const FEATURES = [
   {
-    tag: "Foundation",
+    tag: "Base",
     title: "Next.js + TypeScript",
-    body: "App Router, server components, sensible defaults — no boilerplate noise.",
+    body: "App Router, server components, padrões sensatos — sem ruído de boilerplate.",
   },
   {
     tag: "Design",
-    title: "Tailwind, lightly used",
-    body: "A small palette and clear hierarchy. Easy to extend without fighting the system.",
+    title: "Tailwind, usado com leveza",
+    body: "Uma paleta enxuta e hierarquia clara. Fácil de expandir sem brigar com o sistema.",
   },
   {
-    tag: "Future",
-    title: "Ready for Supabase",
-    body: "Folders and conventions in place so auth and data slot in without rework.",
+    tag: "Futuro",
+    title: "Pronto para o Supabase",
+    body: "Pastas e convenções no lugar para que auth e dados se encaixem sem retrabalho.",
   },
 ];
 
 const STEPS = [
-  "Start with a clean landing page that loads instantly.",
-  "Add Supabase for auth and a Postgres backend.",
-  "Layer in dashboards, lead capture, and reporting.",
-  "Ship to Vercel and connect a real domain.",
+  "Começar com uma landing page limpa que carrega instantaneamente.",
+  "Adicionar Supabase para autenticação e um backend Postgres.",
+  "Incluir dashboards, captação de leads e relatórios.",
+  "Publicar na Vercel e conectar um domínio real.",
 ];
