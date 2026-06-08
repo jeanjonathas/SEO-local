@@ -95,16 +95,16 @@ function Hero() {
       </div>
 
       <div className="mx-auto max-w-6xl px-6 pt-20 pb-12 text-center">
-        <Pill>Toronto · 24/7 · Licensed</Pill>
+        <Pill>Toronto · 24/7 · Licenciado</Pill>
 
         <h1 className="mx-auto mt-6 max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tightish text-ink-900 md:text-6xl">
-          Plumbing service in Toronto. Same-day. Fixed price.
+          Serviço de encanamento em Toronto. Mesmo dia. Preço fixo.
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-ink-600">
-          Burst pipes, water heaters, drain repair across the GTA. Licensed,
-          insured, on time. We quote before we start &mdash; no surprises on
-          the invoice.
+          Canos rompidos, aquecedores, reparo de ralos em todo o GTA. Licenciado,
+          segurado, pontual. Orçamos antes de começar &mdash; sem surpresas na
+          fatura.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -112,18 +112,18 @@ function Hero() {
             href={`tel:${PHONE.replace(/[^\d+]/g, "")}`}
             className="rounded-full bg-ink-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-ink-800"
           >
-            Call {PHONE} <span className="ml-1">&rarr;</span>
+            Ligar {PHONE} <span className="ml-1">&rarr;</span>
           </a>
           <Link
             href="/feedback"
             className="rounded-full border border-ink-200 bg-white px-6 py-3 text-sm font-medium text-ink-800 transition hover:border-ink-400"
           >
-            Book a free quote
+            Solicitar orçamento grátis
           </Link>
         </div>
 
         <p className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-ink-400">
-          Average response · 38 min &middot; 4.9★ from 184 Toronto reviews
+          Tempo médio de resposta · 38 min &middot; 4.9★ de 184 avaliações em Toronto
         </p>
 
         <div className="mx-auto mt-14 max-w-5xl">
@@ -138,9 +138,9 @@ function TrustedBy() {
   return (
     <section className="border-t border-ink-100/80 bg-white">
       <div className="mx-auto max-w-6xl px-6 py-16 text-center">
-        <Pill>Service area</Pill>
+        <Pill>Área de atendimento</Pill>
         <h2 className="mt-4 text-2xl font-semibold tracking-tightish text-ink-900">
-          On call across the GTA
+          Atendimento em toda a GTA
         </h2>
 
         <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-10 gap-y-8 text-ink-400 sm:grid-cols-3 md:grid-cols-6">
@@ -162,13 +162,13 @@ function WhatWeDo() {
   return (
     <section id="what-we-do" className="bg-[#fafaf9]">
       <div className="mx-auto max-w-6xl px-6 py-20 text-center">
-        <Pill>What we fix</Pill>
+        <Pill>O que consertamos</Pill>
         <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-semibold tracking-tightish text-ink-900 md:text-4xl">
-          The 4 things Toronto homeowners call us for
+          As 4 coisas pelas quais os moradores de Toronto nos chamam
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-ink-600">
-          Same-day for emergencies. Booked in 48 hours for everything else.
-          One fixed price. No call-out fee if we don&rsquo;t fix it.
+          Mesmo dia para emergências. Agendado em 48 horas para o resto.
+          Preço fixo. Sem taxa de visita se não consertar.
         </p>
 
         <div className="mt-12 grid gap-5 text-left md:grid-cols-2">
@@ -216,12 +216,12 @@ function CallToAction() {
           <div className="grid items-center gap-8 md:grid-cols-[1.4fr_1fr]">
             <div>
               <h2 className="text-3xl font-semibold tracking-tightish text-ink-900 md:text-4xl">
-                Got water where it shouldn&rsquo;t be?
+                Água onde não deveria estar?
               </h2>
               <p className="mt-3 max-w-xl text-ink-600">
-                Call us before it spreads. 24/7 dispatch across Toronto and
-                the GTA. We&rsquo;ll be there in under an hour for emergencies,
-                with a fixed-price quote before any work starts.
+                Ligue antes que espalhe. Atendimento 24/7 em Toronto e na GTA.
+                Chegamos em menos de uma hora para emergências, com orçamento
+                fixo antes de iniciar qualquer serviço.
               </p>
             </div>
             <div className="flex flex-col items-stretch gap-3">
@@ -229,13 +229,13 @@ function CallToAction() {
                 href={`tel:${PHONE.replace(/[^\d+]/g, "")}`}
                 className="rounded-full bg-ink-900 px-6 py-3 text-center text-sm font-medium text-white transition hover:bg-ink-800"
               >
-                Call now &middot; {PHONE}
+                Ligar agora &middot; {PHONE}
               </a>
               <Link
                 href="/feedback"
                 className="rounded-full border border-ink-200 bg-white px-6 py-3 text-center text-sm font-medium text-ink-800 transition hover:border-ink-400"
               >
-                Book a free quote
+                Solicitar orçamento grátis
               </Link>
             </div>
           </div>
@@ -265,31 +265,31 @@ const AREAS = [
 
 const SERVICES = [
   {
-    pill: "Emergency",
-    title: "Burst pipe + water leak repair",
+    pill: "Emergência",
+    title: "Reparo de cano rompido + vazamento",
     body:
-      "On-site in under an hour anywhere in Toronto. We isolate the line, find the leak, and patch it before your floors swell. 24/7, including holidays.",
+      "No local em menos de uma hora em qualquer lugar de Toronto. Isolamos a linha, encontramos o vazamento e consertamos antes que o piso inche. 24/7, incluindo feriados.",
     visual: <EmergencyPanel />,
   },
   {
-    pill: "Water heater",
-    title: "Water heater install + repair",
+    pill: "Aquecedor",
+    title: "Instalação + reparo de aquecedor",
     body:
-      "Tankless or tank. Installed in 4 hours, 12-year warranty, same-day quotes across the GTA. Same-day swap if yours died this morning.",
+      "Com ou sem reservatório. Instalado em 4 horas, garantia de 12 anos, orçamentos no mesmo dia em todo o GTA. Troca no mesmo dia se o seu parou esta manhã.",
     visual: <HeaterPanel />,
   },
   {
-    pill: "Drain",
-    title: "Drain cleaning + camera inspection",
+    pill: "Ralo",
+    title: "Limpeza de ralo + inspeção por câmera",
     body:
-      "Backed-up basement? We snake it, scope it with a camera, and show you the footage. Quoted per job, not per hour &mdash; you see the price before we start.",
+      "Porão entupido? Desentupimos, inspecionamos com câmera e mostramos as imagens. Preço por serviço, não por hora &mdash; você vê o valor antes de começar.",
     visual: <DrainPanel />,
   },
   {
-    pill: "Renovation",
-    title: "Bathroom + kitchen rough-in",
+    pill: "Reforma",
+    title: "Instalação hidráulica: banheiro + cozinha",
     body:
-      "Working with your contractor or solo. Permits pulled, code-compliant, inspected. Toronto-licensed master plumber on every job.",
+      "Trabalhando com seu empreiteiro ou de forma independente. Licenças obtidas, em conformidade com o código, inspecionado. Encanador mestre licenciado em Toronto em todo trabalho.",
     visual: <RenoPanel />,
   },
 ];
@@ -298,7 +298,7 @@ function EmergencyPanel() {
   return (
     <div className="rounded-xl border border-ink-100 bg-[#fafaf9] p-4">
       <div className="flex items-center justify-between text-xs font-semibold text-ink-400">
-        <span>Average response</span>
+        <span>Tempo de resposta</span>
         <span className="rounded-full bg-ink-900 px-2 py-0.5 text-[10px] text-[#fde68a]">
           24/7
         </span>
@@ -308,7 +308,7 @@ function EmergencyPanel() {
         <span className="text-sm font-semibold text-ink-600">min</span>
       </div>
       <p className="mt-3 text-xs leading-relaxed text-ink-600">
-        Median across <span className="font-semibold text-ink-900">184 Toronto calls</span> in the last 90 days.
+        Mediana de <span className="font-semibold text-ink-900">184 chamadas em Toronto</span> nos últimos 90 dias.
       </p>
     </div>
   );
@@ -319,9 +319,9 @@ function HeaterPanel() {
     <div className="rounded-xl border border-ink-100 bg-[#fafaf9] p-4">
       <ul className="space-y-2 text-sm">
         {[
-          { label: "Tankless install", time: "4 hrs" },
-          { label: "Tank swap", time: "2 hrs" },
-          { label: "Warranty included", time: "12 yrs" },
+          { label: "Instalação sem reservatório", time: "4 h" },
+          { label: "Troca de reservatório", time: "2 h" },
+          { label: "Garantia incluída", time: "12 anos" },
         ].map((r) => (
           <li
             key={r.label}
@@ -341,13 +341,13 @@ function HeaterPanel() {
 function DrainPanel() {
   return (
     <div className="rounded-xl border border-ink-100 bg-[#fafaf9] p-4">
-      <div className="text-xs font-semibold text-ink-400">Fixed-price jobs</div>
+      <div className="text-xs font-semibold text-ink-400">Serviços com preço fixo</div>
       <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
         {[
-          { job: "Snake", price: "$189" },
-          { job: "Camera scope", price: "$249" },
-          { job: "Hydro-jet", price: "$489" },
-          { job: "Line locate", price: "$179" },
+          { job: "Desentupimento", price: "$189" },
+          { job: "Inspeção câmera", price: "$249" },
+          { job: "Hidrojateamento", price: "$489" },
+          { job: "Localização tubul.", price: "$179" },
         ].map((j) => (
           <div
             key={j.job}
@@ -369,10 +369,10 @@ function RenoPanel() {
     <div className="rounded-xl border border-ink-100 bg-[#fafaf9] p-4">
       <ul className="space-y-2 text-sm text-ink-800">
         {[
-          "Toronto-licensed master plumber",
-          "Permits pulled · code compliant",
-          "Insured to $5M",
-          "Works direct with your GC",
+          "Encanador mestre licenciado em Toronto",
+          "Licenças obtidas · conformidade com código",
+          "Segurado até $5M",
+          "Trabalha diretamente com seu empreiteiro",
         ].map((t) => (
           <li
             key={t}

@@ -3,8 +3,8 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata = {
-  title: "Share your feedback",
-  description: "Tell us how we did.",
+  title: "Compartilhe seu feedback",
+  description: "Conte como foi a sua experiência.",
 };
 
 export default function FeedbackPage() {

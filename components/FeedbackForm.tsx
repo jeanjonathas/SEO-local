@@ -44,11 +44,11 @@ export function FeedbackForm() {
     return (
       <div className="w-full max-w-xl text-center">
         <h1 className="text-3xl font-semibold tracking-tightish text-ink-900 md:text-4xl">
-          Thank you.
+          Obrigado.
         </h1>
         <p className="mt-4 text-ink-600 leading-relaxed">
-          We've shared your note with the team. We'll use it to do better next
-          time — we appreciate you taking the time to tell us.
+          Sua mensagem foi compartilhada com a equipe. Usaremos o feedback para
+          melhorar — agradecemos por ter dedicado um momento para nos contar.
         </p>
       </div>
     );
@@ -62,10 +62,10 @@ export function FeedbackForm() {
       className="w-full max-w-xl rounded-2xl border border-ink-100 bg-white p-8 md:p-12 shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
     >
       <p className="text-xs font-medium uppercase tracking-[0.18em] text-ink-400">
-        Your feedback
+        Seu feedback
       </p>
       <h1 className="mt-3 text-2xl font-semibold tracking-tightish text-ink-900 md:text-3xl">
-        How likely would you be to recommend us to friends and family?
+        Qual a probabilidade de você nos recomendar para amigos e familiares?
       </h1>
 
       <div className="mt-8">
@@ -76,7 +76,7 @@ export function FeedbackForm() {
               <button
                 key={n}
                 type="button"
-                aria-label={`${n} out of 5`}
+                aria-label={`${n} de 5`}
                 onClick={() => setRating(n)}
                 onMouseEnter={() => setHover(n)}
                 onMouseLeave={() => setHover(null)}
@@ -92,8 +92,8 @@ export function FeedbackForm() {
           })}
         </div>
         <div className="mt-3 flex justify-between text-xs font-medium text-ink-400">
-          <span>Not likely</span>
-          <span>Very likely</span>
+          <span>Pouco provável</span>
+          <span>Muito provável</span>
         </div>
       </div>
 
@@ -102,7 +102,7 @@ export function FeedbackForm() {
           htmlFor="feedback"
           className="block text-sm font-medium text-ink-800"
         >
-          Do you have any feedback for our team on how we could improve?
+          Você tem algum feedback para nossa equipe sobre como poderíamos melhorar?
         </label>
         <textarea
           id="feedback"
@@ -110,33 +110,33 @@ export function FeedbackForm() {
           rows={4}
           value={feedback}
           onChange={(e) => setFeedback(e.target.value)}
-          placeholder="Optional — but it really helps."
+          placeholder="Opcional — mas ajuda muito."
           className="mt-3 w-full resize-none rounded-xl border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400 outline-none transition focus:border-ink-900"
         />
       </div>
 
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-xs text-ink-400">
-          Takes about 10 seconds.
+          Leva cerca de 10 segundos.
         </p>
         <button
           type="submit"
           disabled={rating === null || status === "submitting"}
           className="rounded-full bg-ink-900 px-6 py-3 text-sm font-medium text-white transition enabled:hover:bg-ink-800 disabled:cursor-not-allowed disabled:opacity-40"
         >
-          {status === "submitting" ? "Sending…" : "Send feedback"}
+          {status === "submitting" ? "Enviando…" : "Enviar feedback"}
         </button>
       </div>
 
       {status === "error" && (
         <p className="mt-4 text-sm text-red-600">
-          Something went wrong. Please try again.
+          Algo deu errado. Por favor, tente novamente.
         </p>
       )}
 
       {rating !== null && rating >= HAPPY_THRESHOLD && status === "idle" && (
         <p className="mt-4 text-xs text-ink-400">
-          Thanks! We'll send you to Google to share that publicly.
+          Ótimo! Vamos te direcionar para o Google para compartilhar publicamente.
         </p>
       )}
     </form>

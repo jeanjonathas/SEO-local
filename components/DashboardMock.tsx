@@ -5,11 +5,11 @@ export function DashboardMock() {
         <div className="flex items-center gap-2">
           <span className="h-2.5 w-2.5 rounded-full bg-ink-900" />
           <span className="text-sm font-semibold tracking-tightish text-ink-900">
-            Local SEO Dashboard
+            Painel de SEO Local
           </span>
         </div>
         <div className="hidden items-center gap-3 text-xs text-ink-400 md:flex">
-          <span>April 2026</span>
+          <span>Abril 2026</span>
           <span className="rounded-full bg-emerald-100 px-2 py-0.5 font-bold text-emerald-700">
             &#9650; +38% MoM
           </span>
@@ -25,12 +25,12 @@ export function DashboardMock() {
       <div className="grid grid-cols-12 gap-0 bg-[#fafaf9]">
         <aside className="col-span-3 hidden flex-col gap-1 border-r border-ink-100 bg-white px-3 py-5 text-sm md:flex">
           {[
-            { label: "Overview", active: true },
+            { label: "Visão geral", active: true },
             { label: "Rankings" },
-            { label: "Reviews" },
-            { label: "GBP Posts" },
-            { label: "Locations" },
-            { label: "Reports" },
+            { label: "Avaliações" },
+            { label: "Posts GBP" },
+            { label: "Locais" },
+            { label: "Relatórios" },
           ].map((item) => (
             <div
               key={item.label}
@@ -52,23 +52,23 @@ export function DashboardMock() {
           <div className="flex items-center justify-between">
             <div>
               <h3 className="text-lg font-semibold tracking-tightish text-ink-900">
-                Welcome back, Jordan
+                Bem-vindo de volta, Jordan
               </h3>
               <p className="text-xs text-ink-400">
-                Your top 3 keywords held position #1 for 23 of the last 30 days.
+                Suas 3 principais palavras-chave ficaram na posição #1 por 23 dos últimos 30 dias.
               </p>
             </div>
             <button className="rounded-full bg-ink-900 px-4 py-2 text-xs font-medium text-[#fde68a]">
-              + New GBP post
+              + Nova publicação GBP
             </button>
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { label: "Top-3 keywords", val: "12", delta: "+3" },
-              { label: "GBP impressions", val: "14,287", delta: "+38%" },
-              { label: "Phone calls", val: "142", delta: "+22%" },
-              { label: "New reviews", val: "8", delta: "4.9 avg" },
+              { label: "Top-3 palavras-chave", val: "12", delta: "+3" },
+              { label: "Impressões GBP", val: "14.287", delta: "+38%" },
+              { label: "Ligações", val: "142", delta: "+22%" },
+              { label: "Novas avaliações", val: "8", delta: "4.9 média" },
             ].map((kpi) => (
               <div
                 key={kpi.label}
@@ -92,21 +92,21 @@ export function DashboardMock() {
           <div className="grid gap-3 md:grid-cols-3">
             <div className="rounded-xl border border-ink-100 bg-white p-4 md:col-span-2">
               <div className="flex items-center justify-between text-xs font-semibold text-ink-400">
-                <span>Geo-grid rank · &ldquo;dentist toronto&rdquo;</span>
-                <span>Avg pos &mdash; 1.8</span>
+                <span>Rank geo-grid · &ldquo;dentista toronto&rdquo;</span>
+                <span>Pos. média &mdash; 1.8</span>
               </div>
               <GeoGrid />
             </div>
 
             <div className="rounded-xl border border-ink-100 bg-white p-4">
               <div className="text-xs font-semibold text-ink-400">
-                Latest reviews
+                Últimas avaliações
               </div>
               <ul className="mt-3 space-y-3 text-xs">
                 {[
-                  { name: "Sarah K.", stars: 5, note: "Fixed in 30 min." },
-                  { name: "David M.", stars: 5, note: "Friendly, clean, fair." },
-                  { name: "Priya R.", stars: 4, note: "Solid service, on time." },
+                  { name: "Sarah K.", stars: 5, note: "Resolvido em 30 min." },
+                  { name: "David M.", stars: 5, note: "Atencioso, organizado, justo." },
+                  { name: "Priya R.", stars: 4, note: "Serviço sólido, pontual." },
                 ].map((r) => (
                   <li
                     key={r.name}
